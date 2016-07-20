@@ -1,20 +1,23 @@
-package Delegate.adapter_class;
+package Delegate.adapter_interface;
 
 /**
  * Created by user on 2016-07-20.
  */
-public class PrintBanner extends Banner implements Print {
-    public PrintBanner(String string) {
-        super(string);
+public class PrintBanner extends Print {
+    private Banner banner;
+
+    public PrintBanner(String string){
+        this.banner = new Banner(string);
     }
+
 
     @Override
     public void printWeek() {
-        showWithParen();
+        banner.showWithParen();
     }
 
     @Override
     public void printStrong() {
-        showWithAster();
+        banner.showWithAster();
     }
 }
