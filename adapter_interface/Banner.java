@@ -1,4 +1,4 @@
-package Delegate.adapter_class;
+package Delegate.adapter_interface;
 
 /**
  * Created by user on 2016-07-20.
